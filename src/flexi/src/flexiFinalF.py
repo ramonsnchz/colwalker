@@ -38,10 +38,10 @@ def random_number_publisher():
         msg.x4= mcp.read_adc(3) #3rd force sensor
         msg.x5= mcp.read_adc(4) #1st force sensor
         msg.x6= mcp.read_adc(5) #3rd force sensor
-        msg.x7= mcp2.read_adc(0) #1st force sensor
-        msg.x8= mcp2.read_adc(3) #2nd force sensor
-        msg.x9= mcp2.read_adc(2) #2nd force sensor
-        msg.x10= mcp2.read_adc(1) #2nd force sensor
+        msg.x7= mcp.read_adc(6) #1st force sensor
+        msg.x8= mcp.read_adc(7) #2nd force sensor
+       # msg.x9= mcp.read_adc(8) #2nd force sensor
+       # msg.x10= mcp.read_adc(1) #2nd force sensor
 
        # msg.x2= mcp.read_adc(1) #2nd force sensor
         #msg.x=  mcp.read_adc(0) #1st force sensor
