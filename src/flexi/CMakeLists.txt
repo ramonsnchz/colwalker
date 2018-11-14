@@ -104,7 +104,7 @@ find_package(catkin REQUIRED COMPONENTS
 ## DEPENDS: system dependencies of this project that dependent projects also need
 catkin_package(
 #  INCLUDE_DIRS include
-#  LIBRARIES flexi
+  LIBRARIES flexi
   CATKIN_DEPENDS rospy 
 #  DEPENDS system_lib
 )

@@ -106,7 +106,7 @@ def random_subscriber():
             main()
         use = input('Type "C" for Correct or "I" for incorrect use: ')
         if use == "C":
-            filename = ("/home/ramon/catkin_test/src/flexi/src/CorrectDataRamon/%s_walking.csv" % num)
+            filename = ("/home/pi/catkin_ws/src/colwalker/src/flexi/src/CorrectData/%s_walking.csv" % num)
             data = {'FSR1': FSR1, 'FSR2': FSR2, 'FSR3': FSR3, 'FSR4': FSR4, 'FSR5': FSR5, 'FSR6': FSR6, 'FSR7': FSR7, 'FSR8': FSR8, 'FSR9': FSR9, 'FSR10': FSR10}
             df1 = DataFrame( data, columns = ['FSR1', 'FSR2', 'FSR3', 'FSR4', 'FSR5', 'FSR6', 'FSR7', 'FSR8', 'FSR9', 'FSR10'])
             df1.to_csv(filename) 
@@ -122,7 +122,7 @@ def random_subscriber():
             FSR10 = []
             secs = []
         elif use == "I":
-            filename = ("/home/ramon/catkin_test/src/flexi/src/IncorrectDataRamon/%s_walking.csv" % num)
+            filename = ("/home/pi/catkin_ws/src/colwalker/src/flexi/src/IncorrectData/%s_walking.csv" % num)
             data = {'FSR1': FSR1, 'FSR2': FSR2, 'FSR3': FSR3, 'FSR4': FSR4, 'FSR5': FSR5, 'FSR6': FSR6, 'FSR7': FSR7, 'FSR8': FSR8, 'FSR9': FSR9, 'FSR10': FSR10}
             df1 = DataFrame( data, columns = ['FSR1', 'FSR2', 'FSR3', 'FSR4', 'FSR5', 'FSR6', 'FSR7', 'FSR8', 'FSR9', 'FSR10'])
             df1.to_csv(filename) 
@@ -141,17 +141,7 @@ def random_subscriber():
      #   df1 = DataFrame( data, columns = ['Time', 'FSR1', 'FSR2', 'FSR3', 'FSR4', 'FSR5', 'FSR6', 'FSR7', 'FSR8', 'FSR9', 'FSR10'])
       #  df1.to_csv(filename) 
         #data = []
-        
-    
-             
-            
-                
-
-        
-               
     rospy.spin()
-    
-    
 
 if __name__=='__main__':
     random_subscriber()

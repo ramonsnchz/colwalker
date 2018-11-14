@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python2
 import rospy
 import math
 import numpy as np
@@ -32,11 +32,11 @@ def random_number_publisher():
 #/
     while not rospy.is_shutdown():
         
-        msg.x= mcp.read_adc(1) #2nd force sensor
-        msg.x2=  mcp.read_adc(0) #1st force sensor
-        msg.x3= mcp.read_adc(4) #2nd force sensor
-        msg.x4= mcp.read_adc(2) #3rd force sensor
-        msg.x5= mcp.read_adc(3) #1st force sensor
+        msg.x= mcp.read_adc(0) #2nd force sensor
+        msg.x2=  mcp.read_adc(1) #1st force sensor
+        msg.x3= mcp.read_adc(2) #2nd force sensor
+        msg.x4= mcp.read_adc(3) #3rd force sensor
+        msg.x5= mcp.read_adc(4) #1st force sensor
         msg.x6= mcp.read_adc(5) #3rd force sensor
         msg.x7= mcp2.read_adc(0) #1st force sensor
         msg.x8= mcp2.read_adc(3) #2nd force sensor
