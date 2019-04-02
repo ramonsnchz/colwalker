@@ -1,0 +1,16 @@
+<launch>
+
+        <node pkg="flexi" type="flexiFinalF.py" name="flexi" output="screen">
+        </node>
+ 
+        <node pkg="flexi" type="guip2.py" name="gui1" output="screen">
+        </node>
+       
+        <!-- 
+        <node pkg="flexi" type="userdatatimeGL.py" name="flexiG" output="screen">
+        </node> -->
+
+        
+        
+
+</launch>

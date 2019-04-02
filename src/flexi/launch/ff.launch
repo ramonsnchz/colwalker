@@ -1,0 +1,11 @@
+
+<launch>
+
+        <node pkg="flexi" type="flexiFinalF.py" name="flexi" output="screen">
+        </node>
+        
+        <node pkg="flexi" type="userdatatime.py" name="flexinode" output="screen">
+        </node>
+        
+
+</launch>

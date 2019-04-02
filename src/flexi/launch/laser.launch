@@ -1,0 +1,2 @@
+<!-- Run a static transform between /odom and /map -->
+<node pkg="tf" type="static_transform_publisher" name="laser_frame" args="0 0 0 0 0 0 /scan /odom 100" />

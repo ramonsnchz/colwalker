@@ -1,0 +1,8 @@
+prefix=/home/ramon/catkin_colwalker/install
+
+Name: flexi
+Description: Description of flexi
+Version: 0.0.0
+Cflags: -I/home/ramon/catkin_colwalker/install/include
+Libs: -L/home/ramon/catkin_colwalker/install/lib 
+Requires: rospy

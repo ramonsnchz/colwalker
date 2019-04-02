@@ -1,0 +1,2 @@
+flexi
+-DCATKIN_DEVEL_PREFIX=/home/ramon/catkin_colwalker/devel -DCMAKE_INSTALL_PREFIX=/home/ramon/catkin_colwalker/install -G Unix Makefiles
